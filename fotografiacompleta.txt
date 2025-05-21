@@ -1,0 +1,340 @@
+<PROJECT_TREE>
+app/.dockerignore
+app/.editorconfig
+app/.env.example
+app/Dockerfile
+app/LICENSE
+app/README.md
+app/README.zh-Hans.md
+app/app.config.ts
+app/app.vue
+app/assets/index.scss
+app/assets/katex.scss
+app/assets/markdown.scss
+app/components/Auth.vue
+app/components/Charlie.vue
+app/components/CharlieGemini.vue
+app/components/Chat.vue
+app/components/ChatConfigInfo.vue
+app/components/ChatInputBox.vue
+app/components/ChatMessageActionMore.vue
+app/components/ChatMessageItem.vue
+app/components/ChatSessionList.vue
+app/components/ChatSessionListActionMore.vue
+app/components/ChatSettings.vue
+app/components/ColorMode.vue
+app/components/ComponentPreview.vue
+app/components/Download.vue
+app/components/FileButton.vue
+app/components/FileSelector.vue
+app/components/Gemini.vue
+app/components/Heading.vue
+app/components/IconMicrophone.vue
+app/components/IconSpinner.vue
+app/components/IconStop.vue
+app/components/InstructionForm.vue
+app/components/KnowledgeBaseForm.vue
+app/components/MarkdownPreview.vue
+app/components/MessageToggleCollapseButton.vue
+app/components/MobileMenu.vue
+app/components/Models.vue
+app/components/ModelsMultiSelectMenu.vue
+app/components/ModelsSelectMenu.vue
+app/components/PreviewSandbox.vue
+app/components/Source.vue
+app/components/Sources.vue
+app/components/TheLogo.vue
+app/components/TheTextarea.vue
+app/components/settings/CreateCustomServer.vue
+app/components/settings/CustomServerForm.vue
+app/components/settings/LanguageSelectMenu.vue
+app/components/settings/SettingsCard.vue
+app/components/settings/SettingsChatSettings.vue
+app/components/settings/SettingsRealtimeChat.vue
+app/components/settings/SettingsServers.vue
+app/composables/clientDB.ts
+app/composables/fetchWithAuth.ts
+app/composables/helpers.ts
+app/composables/markdown.ts
+app/composables/store.ts
+app/composables/useChatWorker.ts
+app/composables/useCreateChatSession.ts
+app/composables/useDialog.ts
+app/composables/useKatexClient.ts
+app/composables/useMediaBreakpoints.ts
+app/composables/useMenus.ts
+app/composables/useModels.ts
+app/composables/useOpenAIModels.ts
+app/composables/useTools.ts
+app/composables/utils.ts
+app/composables/worker-chatRequest.ts
+app/config/i18n.ts
+app/config/index.ts
+app/config/models.ts
+app/config/nuxtjsI18n.ts
+app/docker-compose.yaml
+app/docker-compose_arm.yaml
+app/docker-compose_gpu.yaml
+app/docs/proxy-usage.md
+app/global.d.ts
+app/i18n.config.ts
+app/layouts/default.vue
+app/locales/en-US.json
+app/locales/zh-CN.json
+app/middleware/defaultPage.global.ts
+app/nuxt.config.ts
+app/package.json
+app/pages/chat/index.vue
+app/pages/index.vue
+app/pages/instructions/index.vue
+app/pages/knowledgebases/index.vue
+app/pages/latex-test.vue
+app/pages/login/index.vue
+app/pages/logout/index.vue
+app/pages/models/index.vue
+app/pages/realtime/index.vue
+app/pages/settings/index.vue
+app/pages/signup/index.vue
+app/pages/welcome.vue
+app/plugins/analytics.client.ts
+app/pnpm-lock.yaml
+app/prisma/migrations/20240302004128_init/migration.sql
+app/prisma/migrations/20240305202320_knowlegebase_files/migration.sql
+app/prisma/migrations/20240305205052_files_cascade_deletion/migration.sql
+app/prisma/migrations/20240309101210_instruction/migration.sql
+app/prisma/migrations/20240415204753_user/migration.sql
+app/prisma/migrations/20240422224033_user_knowledgebases/migration.sql
+app/prisma/migrations/20240423083729_non_unique_users/migration.sql
+app/prisma/migrations/20240423165019_knowledgebase_is_public/migration.sql
+app/prisma/migrations/20250130213511_knowledgebase_chunking/migration.sql
+app/prisma/migrations/migration_lock.toml
+app/prisma/schema.prisma
+app/public/favicon.ico
+app/public/logo.svg
+app/public/worklets/audio-processing.js
+app/scripts/startup.sh
+app/server/api/audio/session.post.ts
+app/server/api/auth/login.post.ts
+app/server/api/auth/logout.post.ts
+app/server/api/auth/signup.post.ts
+app/server/api/auth/user.get.ts
+app/server/api/instruction/[id].delete.ts
+app/server/api/instruction/[id].put.ts
+app/server/api/instruction/index.get.ts
+app/server/api/instruction/index.post.ts
+app/server/api/knowledgebases/[id].delete.ts
+app/server/api/knowledgebases/[id].get.ts
+app/server/api/knowledgebases/[id].put.ts
+app/server/api/knowledgebases/index.get.ts
+app/server/api/knowledgebases/index.post.ts
+app/server/api/models/chat/index.post.ts
+app/server/api/models/index.delete.ts
+app/server/api/models/index.get.ts
+app/server/api/models/pull/index.post.ts
+app/server/api/proxy.ts
+app/server/coref/index.ts
+app/server/docstore/redis.ts
+app/server/middleware/auth.ts
+app/server/middleware/keys.ts
+app/server/middleware/proxyAuth.ts
+app/server/models/genai/generative-ai.ts
+app/server/models/genai/output_parsers.ts
+app/server/models/genai/types.ts
+app/server/models/genai/utils.ts
+app/server/models/genai/utils/common.ts
+app/server/models/genai/utils/tools.ts
+app/server/models/genai/utils/zod_to_genai_parameters.ts
+app/server/rerank/cohere.ts
+app/server/retriever/index.ts
+app/server/store/redis.ts
+app/server/tsconfig.json
+app/server/types/index.ts
+app/server/utils/http.ts
+app/server/utils/index.ts
+app/server/utils/knowledgeBase.ts
+app/server/utils/mcp.ts
+app/server/utils/models.ts
+app/server/utils/ollama.ts
+app/server/utils/prisma.ts
+app/server/utils/proxyToken.ts
+app/server/utils/rag.ts
+app/server/utils/recursiveUrlLoader.ts
+app/server/utils/vectorstores.ts
+app/tailwind.config.ts
+app/tsconfig.json
+app/types/auth.d.ts
+app/types/chat.d.ts
+app/types/context.d.ts
+app/types/helper.d.ts
+app/types/katex.d.ts
+app/types/markdown-it-katex.d.ts
+app/types/markdown-it.d.ts
+app/types/multimodal-live-types.ts
+app/utils/MultimodalLiveClient.ts
+app/utils/audio-recorder.ts
+app/utils/audio-streamer.ts
+app/utils/audio-worklets/audio-processing.ts
+app/utils/auth.ts
+app/utils/multimodal-live.ts
+app/utils/settings.ts
+app/vercel.json
+</PROJECT_TREE>
+
+<LANGUAGE_DETECTED>
+      1 dockerignore
+      1 editorconfig
+      1 example
+      1 ico
+      1 js
+      6 json
+      3 md
+      1 prisma
+      3 scss
+      1 sh
+      9 sql
+      1 svg
+      1 toml
+     88 ts
+     55 vue
+      4 yaml
+</LANGUAGE_DETECTED>
+
+<DEPENDENCY_FILES>
+app/package.json
+app/pnpm-lock.yaml
+app/nuxt.config.ts
+app/tsconfig.json
+app/server/tsconfig.json
+</DEPENDENCY_FILES>
+
+<BUILD_RUN_SCRIPTS>
+app/Dockerfile
+app/docker-compose.yaml
+app/docker-compose_arm.yaml
+app/docker-compose_gpu.yaml
+app/scripts/startup.sh
+Package.json scripts: build, dev, generate, preview, postinstall, prisma-deploy, prisma-migrate, prisma-generate, prisma-push, test
+</BUILD_RUN_SCRIPTS>
+
+<README_INSTALL>
+1. Install and run Ollama server
+
+    You will need an Ollama server running. Follow the installation guide of [Ollama](https://github.com/ollama/ollama). By default, it's running on http://localhost:11434.    
+
+2. Install Chroma
+
+    Please refer to [https://docs.trychroma.com/getting-started](https://docs.trychroma.com/getting-started) for Chroma installation.
+
+    We recommend you run it in a docker container:
+
+    ```bash
+    #https://hub.docker.com/r/chromadb/chroma/tags
+
+    docker pull chromadb/chroma
+    docker run -d -p 8000:8000 chromadb/chroma
+    ```
+    Now, ChromaDB is running on http://localhost:8000
+
+3. ChatOllama Setup
+
+    Now, we can complete the necessary setup to run ChatOllama.
+
+    3.1 Copy the `.env.example` file to `.env` file:
+
+    ```bash
+    cp .env.example .env
+    ```
+
+    3.2 Make sure to install the dependencies:
+
+    ```bash
+    pnpm install
+    ```
+
+    3.3 Run a migration to create your database tables with Prisma Migrate
+
+    ```bash
+    pnpm prisma-migrate
+    ```
+
+4. Launch Development Server
+
+    > Make sure both __[Ollama Server](#ollama-server)__ and __[ChromaDB](#install-chromadb-and-startup)__ are running.
+
+    Start the development server on `http://localhost:3000`:
+
+    ```bash
+    pnpm dev
+    ```
+
+### Use with Docker
+
+This is the easist way to use `ChatOllama`.
+
+The only thing you need is a copy of [docker-compose.yaml](./docker-compose.yaml). Please download it and execute the command below to launch `ChatOllama`.
+
+```shell
+$ docker compose up
+```
+
+As `ChatOllama` is running within a docker container, you should set Ollama server to `http://host.docker.internal:11434` in the Settings section, assuming your Ollama server is running locally with default port.
+
+Make sure you initialize the SQLite database as below if you are launching the dockerized `ChatOllama` for the first time:
+
+```shell
+$ docker compose exec chatollama npx prisma migrate dev
+```
+#### Prerequisites for knowledge bases
+When using KnowledgeBases, we need a valid embedding model in place. It can be one of the models downloaded by Ollama or from 3rd party service provider for example, OpenAI.
+
+**Ollama Managed Embedding Model**
+
+We recommend you download `nomic-embed-text` model for embedding purpose.
+
+You can do so on Models page http://localhost:3000/models, or via CLI as below if you are using Docker.
+
+```shell
+# In the folder of docker-compose.yaml
+
+$ docker compose exec ollama ollama pull nomic-embed-text:latest
+```
+
+**OpenAI Embedding Model**
+
+If you prefer to use OpenAI, please make sure you set a valid OpenAI API Key in Settings, and fill with one of the OpenAI embedding models listed below:
+
+- `text-embedding-3-large`
+- `text-embedding-3-small`
+- `text-embedding-ada-002`
+
+#### Data Storage with Docker Containers
+</README_INSTALL>
+
+<ENV_VARS>
+DISABLE_VERCEL_ANALYTICS=false
+DATABASE_URL=file:../../chatollama.sqlite
+PORT=3000
+HOST=
+LANGCHAIN_TRACING_V2=false
+LANGCHAIN_API_KEY=
+LANGCHAIN_PROJECT=chat-ollama
+REDIS_HOST=
+MOONSHOT_API_KEY=
+VECTOR_STORE=chroma
+CHROMADB_URL=http://localhost:8000
+MILVUS_URL=http://localhost:19530
+COHERE_API_KEY=
+COHERE_MODEL=
+COHERE_BASE_URL=
+SUPER_ADMIN_NAME=
+NUXT_PUBLIC_MODEL_PROXY_ENABLED=false
+NUXT_MODEL_PROXY_URL=
+NUXT_PUBLIC_CHAT_MAX_ATTACHED_MESSAGES=50
+</ENV_VARS>
+
+<PORTS_SERVICES>
+Dockerfile exposes 3000
+Docker Compose ports: 8000 (chromadb), 3000 (chatollama)
+Docker Compose GPU additional port: 11434 (ollama)
+Redis service uses port 6379 internally
+</PORTS_SERVICES>
